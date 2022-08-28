@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Outstargram
+//  Outstagram
 //
 //  Created by 구희정 on 2022/08/28.
 //

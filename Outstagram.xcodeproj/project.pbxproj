@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		38844D9628BB991A00CC1405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38844D9528BB991A00CC1405 /* AppDelegate.swift */; };
 		38844D9828BB991A00CC1405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38844D9728BB991A00CC1405 /* SceneDelegate.swift */; };
-		38844D9A28BB991A00CC1405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38844D9928BB991A00CC1405 /* ViewController.swift */; };
-		38844D9D28BB991A00CC1405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38844D9B28BB991A00CC1405 /* Main.storyboard */; };
 		38844D9F28BB992000CC1405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38844D9E28BB992000CC1405 /* Assets.xcassets */; };
 		38844DA228BB992000CC1405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38844DA028BB992000CC1405 /* LaunchScreen.storyboard */; };
+		38844DAB28BB99FD00CC1405 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 38844DAA28BB99FD00CC1405 /* SnapKit */; };
+		38844DAD28BB9A7B00CC1405 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38844DAC28BB9A7B00CC1405 /* TabBarController.swift */; };
+		38844DB028BB9C5B00CC1405 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38844DAF28BB9C5B00CC1405 /* FeedViewController.swift */; };
+		389E5AE828BBA20B006F990A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 389E5AE728BBA20B006F990A /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38844D9228BB991A00CC1405 /* Outstargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outstargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38844D9228BB991A00CC1405 /* Outstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38844D9528BB991A00CC1405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38844D9728BB991A00CC1405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		38844D9928BB991A00CC1405 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		38844D9C28BB991A00CC1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38844D9E28BB992000CC1405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38844DA128BB992000CC1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38844DA328BB992000CC1405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38844DAC28BB9A7B00CC1405 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		38844DAF28BB9C5B00CC1405 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38844DAB28BB99FD00CC1405 /* SnapKit in Frameworks */,
+				389E5AE828BBA20B006F990A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +44,7 @@
 		38844D8928BB991A00CC1405 = {
 			isa = PBXGroup;
 			children = (
-				38844D9428BB991A00CC1405 /* Outstargram */,
+				38844D9428BB991A00CC1405 /* Outstagram */,
 				38844D9328BB991A00CC1405 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +52,39 @@
 		38844D9328BB991A00CC1405 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38844D9228BB991A00CC1405 /* Outstargram.app */,
+				38844D9228BB991A00CC1405 /* Outstagram.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38844D9428BB991A00CC1405 /* Outstargram */ = {
+		38844D9428BB991A00CC1405 /* Outstagram */ = {
 			isa = PBXGroup;
 			children = (
 				38844D9528BB991A00CC1405 /* AppDelegate.swift */,
 				38844D9728BB991A00CC1405 /* SceneDelegate.swift */,
-				38844D9928BB991A00CC1405 /* ViewController.swift */,
-				38844D9B28BB991A00CC1405 /* Main.storyboard */,
+				38844DAE28BB9A8100CC1405 /* Scenes */,
 				38844D9E28BB992000CC1405 /* Assets.xcassets */,
 				38844DA028BB992000CC1405 /* LaunchScreen.storyboard */,
 				38844DA328BB992000CC1405 /* Info.plist */,
 			);
-			path = Outstargram;
+			path = Outstagram;
+			sourceTree = "<group>";
+		};
+		38844DAE28BB9A8100CC1405 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				38844DAC28BB9A7B00CC1405 /* TabBarController.swift */,
+				38844DAF28BB9C5B00CC1405 /* FeedViewController.swift */,
+			);
+			name = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38844D9128BB991A00CC1405 /* Outstargram */ = {
+		38844D9128BB991A00CC1405 /* Outstagram */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38844DA628BB992000CC1405 /* Build configuration list for PBXNativeTarget "Outstargram" */;
+			buildConfigurationList = 38844DA628BB992000CC1405 /* Build configuration list for PBXNativeTarget "Outstagram" */;
 			buildPhases = (
 				38844D8E28BB991A00CC1405 /* Sources */,
 				38844D8F28BB991A00CC1405 /* Frameworks */,
@@ -82,9 +94,13 @@
 			);
 			dependencies = (
 			);
-			name = Outstargram;
+			name = Outstagram;
+			packageProductDependencies = (
+				38844DAA28BB99FD00CC1405 /* SnapKit */,
+				389E5AE728BBA20B006F990A /* SnapKit */,
+			);
 			productName = Outstargram;
-			productReference = 38844D9228BB991A00CC1405 /* Outstargram.app */;
+			productReference = 38844D9228BB991A00CC1405 /* Outstagram.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 38844D8D28BB991A00CC1405 /* Build configuration list for PBXProject "Outstargram" */;
+			buildConfigurationList = 38844D8D28BB991A00CC1405 /* Build configuration list for PBXProject "Outstagram" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,11 +127,15 @@
 				Base,
 			);
 			mainGroup = 38844D8928BB991A00CC1405;
+			packageReferences = (
+				38844DA928BB99FD00CC1405 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				389E5AE628BBA20B006F990A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 38844D9328BB991A00CC1405 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38844D9128BB991A00CC1405 /* Outstargram */,
+				38844D9128BB991A00CC1405 /* Outstagram */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +147,6 @@
 			files = (
 				38844DA228BB992000CC1405 /* LaunchScreen.storyboard in Resources */,
 				38844D9F28BB992000CC1405 /* Assets.xcassets in Resources */,
-				38844D9D28BB991A00CC1405 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38844D9A28BB991A00CC1405 /* ViewController.swift in Sources */,
+				38844DAD28BB9A7B00CC1405 /* TabBarController.swift in Sources */,
 				38844D9628BB991A00CC1405 /* AppDelegate.swift in Sources */,
+				38844DB028BB9C5B00CC1405 /* FeedViewController.swift in Sources */,
 				38844D9828BB991A00CC1405 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		38844D9B28BB991A00CC1405 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				38844D9C28BB991A00CC1405 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		38844DA028BB992000CC1405 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,7 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85497UUDUF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Outstargram/Info.plist;
+				INFOPLIST_FILE = Outstagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = koo.Outstargram;
+				PRODUCT_BUNDLE_IDENTIFIER = koo.Outstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85497UUDUF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Outstargram/Info.plist;
+				INFOPLIST_FILE = Outstagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = koo.Outstargram;
+				PRODUCT_BUNDLE_IDENTIFIER = koo.Outstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38844D8D28BB991A00CC1405 /* Build configuration list for PBXProject "Outstargram" */ = {
+		38844D8D28BB991A00CC1405 /* Build configuration list for PBXProject "Outstagram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38844DA428BB992000CC1405 /* Debug */,
@@ -348,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38844DA628BB992000CC1405 /* Build configuration list for PBXNativeTarget "Outstargram" */ = {
+		38844DA628BB992000CC1405 /* Build configuration list for PBXNativeTarget "Outstagram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38844DA728BB992000CC1405 /* Debug */,
@@ -358,6 +370,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38844DA928BB99FD00CC1405 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		389E5AE628BBA20B006F990A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38844DAA28BB99FD00CC1405 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38844DA928BB99FD00CC1405 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		389E5AE728BBA20B006F990A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38844DA928BB99FD00CC1405 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 38844D8A28BB991A00CC1405 /* Project object */;
 }
