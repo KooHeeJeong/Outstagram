@@ -15,6 +15,9 @@
 		38844DAD28BB9A7B00CC1405 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38844DAC28BB9A7B00CC1405 /* TabBarController.swift */; };
 		38844DB028BB9C5B00CC1405 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38844DAF28BB9C5B00CC1405 /* FeedViewController.swift */; };
 		389E5AE828BBA20B006F990A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 389E5AE728BBA20B006F990A /* SnapKit */; };
+		38BE045A293B7AAD009B28D8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE0459293B7AAD009B28D8 /* ProfileViewController.swift */; };
+		38BE045C293B8248009B28D8 /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE045B293B8248009B28D8 /* ProfileDataView.swift */; };
+		38BE045E293B88DF009B28D8 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE045D293B88DF009B28D8 /* ProfileCollectionViewCell.swift */; };
 		38BF7C27293385EC00588844 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BF7C26293385EC00588844 /* FeedTableViewCell.swift */; };
 		38BF7C2929338FA600588844 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BF7C2829338FA600588844 /* UIButton+.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +31,9 @@
 		38844DA328BB992000CC1405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38844DAC28BB9A7B00CC1405 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		38844DAF28BB9C5B00CC1405 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		38BE0459293B7AAD009B28D8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		38BE045B293B8248009B28D8 /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
+		38BE045D293B88DF009B28D8 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		38BF7C26293385EC00588844 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		38BF7C2829338FA600588844 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,11 +84,30 @@
 		38844DAE28BB9A8100CC1405 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				38BE0458293B7A8E009B28D8 /* Profile */,
+				38BE0457293B7A7A009B28D8 /* Feed */,
 				38844DAC28BB9A7B00CC1405 /* TabBarController.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		38BE0457293B7A7A009B28D8 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
 				38844DAF28BB9C5B00CC1405 /* FeedViewController.swift */,
 				38BF7C26293385EC00588844 /* FeedTableViewCell.swift */,
 			);
-			name = Scenes;
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		38BE0458293B7A8E009B28D8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				38BE0459293B7AAD009B28D8 /* ProfileViewController.swift */,
+				38BE045B293B8248009B28D8 /* ProfileDataView.swift */,
+				38BE045D293B88DF009B28D8 /* ProfileCollectionViewCell.swift */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,10 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				38844DAD28BB9A7B00CC1405 /* TabBarController.swift in Sources */,
+				38BE045E293B88DF009B28D8 /* ProfileCollectionViewCell.swift in Sources */,
 				38BF7C2929338FA600588844 /* UIButton+.swift in Sources */,
 				38844D9628BB991A00CC1405 /* AppDelegate.swift in Sources */,
 				38844DB028BB9C5B00CC1405 /* FeedViewController.swift in Sources */,
+				38BE045A293B7AAD009B28D8 /* ProfileViewController.swift in Sources */,
 				38844D9828BB991A00CC1405 /* SceneDelegate.swift in Sources */,
+				38BE045C293B8248009B28D8 /* ProfileDataView.swift in Sources */,
 				38BF7C27293385EC00588844 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +340,6 @@
 				INFOPLIST_FILE = Outstagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,7 +367,6 @@
 				INFOPLIST_FILE = Outstagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
