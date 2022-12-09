@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38552CDE294368100024FF5C /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38552CDD294368100024FF5C /* UploadViewController.swift */; };
 		38844D9628BB991A00CC1405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38844D9528BB991A00CC1405 /* AppDelegate.swift */; };
 		38844D9828BB991A00CC1405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38844D9728BB991A00CC1405 /* SceneDelegate.swift */; };
 		38844D9F28BB992000CC1405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38844D9E28BB992000CC1405 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38552CDD294368100024FF5C /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		38844D9228BB991A00CC1405 /* Outstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38844D9528BB991A00CC1405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38844D9728BB991A00CC1405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				38844DAF28BB9C5B00CC1405 /* FeedViewController.swift */,
 				38BF7C26293385EC00588844 /* FeedTableViewCell.swift */,
+				38552CDD294368100024FF5C /* UploadViewController.swift */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38844DAD28BB9A7B00CC1405 /* TabBarController.swift in Sources */,
+				38552CDE294368100024FF5C /* UploadViewController.swift in Sources */,
 				38BE045E293B88DF009B28D8 /* ProfileCollectionViewCell.swift in Sources */,
 				38BF7C2929338FA600588844 /* UIButton+.swift in Sources */,
 				38844D9628BB991A00CC1405 /* AppDelegate.swift in Sources */,
