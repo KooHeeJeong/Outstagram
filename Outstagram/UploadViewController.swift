@@ -17,6 +17,7 @@ final class UploadViewController: UIViewController {
         textView.font = .systemFont(ofSize: 15.0)
         textView.text = "문구 입력을 해주세요."
         textView.textColor = .secondaryLabel
+        textView.delegate = self
         
         return textView
     }()
@@ -41,8 +42,22 @@ final class UploadViewController: UIViewController {
         imageView.image = uploadImage
         
     }
+    //화면 터치시, 키보드 내려가도록 하는 메소드
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     
 }
+
+extension UploadViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        guard textView.textColor == .secondaryLabel else { return }
+        
+        textView.text = nil
+        textView.textColor = .label
+    }
+}
+
 private extension UploadViewController {
     func setupNavigationItem() {
         navigationItem.title = "새 게시물"

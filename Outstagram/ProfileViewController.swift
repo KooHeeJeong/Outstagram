@@ -51,7 +51,8 @@ final class ProfileViewController : UIViewController {
         button.setTitle("메세지", for: .normal)
         button.setTitleColor(.label, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 14.0, weight: .semibold)
-        button.backgroundColor = .white
+        button.backgroundColor = .lightGray
+        button.setTitleColor(UIColor.systemBackground, for: .normal)
         button.layer.cornerRadius = 3.0
         button.layer.borderWidth = 0.5
         button.layer.borderColor = UIColor.tertiaryLabel.cgColor
